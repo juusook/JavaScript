@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ol id="myList"> </ol>
+
+<script>
+    const dogs = [];
+    for (i = 0; i < 6; i++) {
+        par = prompt(`Name of ${i + 1}. dog`);
+        dogs.push(par);
+    }
+    dogs.sort();
+    dogs.reverse();
+    let list = document.getElementById("myList");
+    let html = ""
+    for (let i = 0; i < dogs.length; i++) {
+        html += '<li>' + dogs[i] + "</li>";
+    }
+    list.innerHTML = html;
+
+</script>
+
+</body>
+</html>

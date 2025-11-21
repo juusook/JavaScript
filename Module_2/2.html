@@ -5,9 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<ol id="myList">
-
-</ol>
+<ol id="myList"> </ol>
 
 <script>
     const participants = [];
@@ -17,14 +15,12 @@
         participants.push(par);
     }
     participants.sort();
-
     let list = document.getElementById("myList");
     let html = ""
     for (let i = 0; i < participants.length; i++) {
         html += '<li>' + participants[i] + "</li>";
     }
     list.innerHTML = html;
-
 
 </script>
 </body>

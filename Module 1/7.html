@@ -7,19 +7,19 @@
 <body>
 
 <script>
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
-rolls = parseInt(prompt("Enter the number of rolls: "))
-total = 0;
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+    rolls = parseInt(prompt("Enter the number of rolls: "))
+    total = 0;
 
-for (let i = 0; i < rolls; i++) {
-    let number = getRandomInt(6) + 1;
-    console.log(`Roll ${i + 1}: ${number}`);
-    total += number;
-}
-console.log(`Total sum of rolls is: ${total}`)
-</script>
+    for (let i = 0; i < rolls; i++) {
+        let number = getRandomInt(6) + 1;
+        console.log(`Roll ${i + 1}: ${number}`);
+        total += number;
+    }
+    console.log(`Total sum of rolls is: ${total}`)
+    </script>
 
 </body>
 </html>
